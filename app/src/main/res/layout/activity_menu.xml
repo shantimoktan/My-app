@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c37fe0"
+    tools:context=".MenuActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_background">
+
+        <RelativeLayout
+            android:id="@+id/listBtn"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/rounded"
+            android:elevation="10dp">
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="-220dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="76dp"
+                android:layout_marginBottom="20dp"
+                android:layout_toEndOf="@+id/listViewImage"
+                android:text="List"
+                android:textAlignment="inherit"
+                android:textColor="#000"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/listViewImage"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="239dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/round_btn"
+                android:rotationX="8"
+                tools:srcCompat="@drawable/ic_list" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/calculatorBtn"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginEnd="44dp"
+            android:background="@drawable/rounded"
+            android:elevation="10dp">
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="-220dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="74dp"
+                android:layout_marginBottom="20dp"
+                android:layout_toEndOf="@+id/CalculatorViewImage"
+                android:text="Calculator"
+                android:textAlignment="inherit"
+                android:textColor="#000"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/CalculatorViewImage"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="239dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/round_btn"
+                android:rotationX="8"
+                tools:srcCompat="@drawable/ic_calculator" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/gameBtn"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="250dp"
+            android:layout_marginEnd="44dp"
+            android:background="@drawable/rounded"
+            android:elevation="10dp">
+            <ImageView
+                android:id="@+id/numberGuessViewImage"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="239dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/round_btn"
+                android:rotationX="8"
+                tools:srcCompat="@drawable/ic_numberguess" />
+
+            <TextView
+                android:layout_width="212dp"
+                android:layout_height="47dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="-220dp"
+                android:layout_marginTop="21dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="12dp"
+                android:layout_toEndOf="@+id/numberGuessViewImage"
+                android:text="Number Game"
+                android:textAlignment="inherit"
+                android:textColor="#000"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
