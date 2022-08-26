@@ -49,7 +49,6 @@ public class MainActivity extends AppCompatActivity {
             loginbtn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    startActivity(new Intent(MainActivity.this, file.class));
                     //incase of empty
                     if (TextUtils.isEmpty(username.getText().toString()) || TextUtils.isEmpty(password.getText().toString())) {
                         Toast.makeText(MainActivity.this, "Empty data", Toast.LENGTH_LONG).show();
@@ -57,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
                         //check password
                         if (password.getText().toString().equals(correct_password)) {
                             Toast.makeText(MainActivity.this, "Success login", Toast.LENGTH_LONG).show();
+                            startActivity(new Intent(MainActivity.this, file.class));
                         } else {
                             Toast.makeText(MainActivity.this, "Invalid username/password", Toast.LENGTH_LONG).show();
                         }
