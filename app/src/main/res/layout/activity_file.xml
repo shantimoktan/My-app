@@ -4,11 +4,92 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".file">
+    android:background="#c37fe0"
+    tools:context=".MainActivity">
 
-
-    <ListView
-        android:id="@+id/listview"
+    <TextView
+        android:id="@+id/title"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="Create a list and save to a file"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/createList"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/title"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/round_btn"
+        android:backgroundTint="#ddb3ef"
+        android:drawablePadding="20dp"
+        android:hint="Create List"
+        android:inputType="textMultiLine"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/createBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/createList"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/round_btn"
+        android:text="Save to file"
+        app:backgroundTint="@android:color/holo_purple" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/UpdateFile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/createBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/round_btn"
+        android:text="Update file"
+        app:backgroundTint="@android:color/holo_blue_dark" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/DeleteFile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/UpdateFile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/round_btn"
+        android:text="Delete file"
+        app:backgroundTint="@android:color/holo_red_dark" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/ViewFile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/DeleteFile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/round_btn"
+        android:text="View file"
+        app:backgroundTint="@android:color/holo_purple" />
+
 </RelativeLayout>

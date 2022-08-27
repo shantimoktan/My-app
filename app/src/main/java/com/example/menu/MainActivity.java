@@ -42,22 +42,17 @@ public class MainActivity extends AppCompatActivity {
             password = findViewById(R.id.password);
             loginbtn = findViewById(R.id.loginbtn);
 
-            //define materialButton to loginbtn
-         //   MaterialButton loginbtn = (MaterialButton) findViewById(R.id.loginbtn);
-
-
             loginbtn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    startActivity(new Intent(MainActivity.this, MenuActivity.class));
                     //in-case of empty
                     if (TextUtils.isEmpty(username.getText().toString()) || TextUtils.isEmpty(password.getText().toString())) {
-                        Toast.makeText(MainActivity.this, "Empty data", Toast.LENGTH_LONG).show();
+                        Toast.makeText(MainActivity.this, "Please provide username and password", Toast.LENGTH_LONG).show();
                     } else if (username.getText().toString().equals(correct_username)) {
                         //check password
                         if (password.getText().toString().equals(correct_password)) {
                             Toast.makeText(MainActivity.this, "Success login", Toast.LENGTH_LONG).show();
-//                            startActivity(new Intent(MainActivity.this, file.class));
+                            startActivity(new Intent(MainActivity.this, MenuActivity.class));
                         } else {
                             Toast.makeText(MainActivity.this, "Invalid username/password", Toast.LENGTH_LONG).show();
                         }
